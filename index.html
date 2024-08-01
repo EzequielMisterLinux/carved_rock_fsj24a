@@ -1,71 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carved Rock Fitness</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .hero-image {
+            background-image: url('./img/shutterstock_116403520.jpg');
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .icon img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1710868806/practicas/site_montain/carved-rock-logo-black_jd7fga.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/carved-rock-logo-black.png" alt="Carved Rock Fitness" height="90">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <!-- banner -->
-        </div>
-    </header>
-    <main>
-        <section>
-            <article>
-                <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1710868808/practicas/site_montain/mountain_Blue_jw0ynv.png" alt="mountain">
-                <h3>Climbing</h3>
-                <p>Get your climbing gear for the season.</p>
-            </article>
-            <article>
-                <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1710868809/practicas/site_montain/shoe_Blue_i30lmj.png" alt="mountain">
-                <h3>Running</h3>
-                <p>Run from your troubles with these shoes.</p>
-            </article>
-            <article>
-                <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1710868806/practicas/site_montain/bicycle_Blue_vtsexv.png" alt="mountain">
-                <h3>Bicyle</h3>
-                <p>Can't get away fast enough? Try a bike.</p>
-            </article>
-        </section>
+    </nav>
 
-        <section>
-            <article>
-                <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1710868813/practicas/site_montain/shutterstock_422560537_qhgwzr.jpg" alt="">
-            </article>
-            <article>
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui animi magni deserunt, dignissimos obcaecati culpa delectus quae. Natus ullam omnis nemo labore corrupti et praesentium unde ratione optio a?</p>
-                <button>Lear More</button>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1710868807/practicas/site_montain/carved-rock-logo-white_usixeg.png" alt="">
-        </div>
-        <div>
-            <h4>Contacto</h4>
-            <div>
-                <p><strong>Direccion: </strong> Ciudad de Mexico</p>
+    <header class="hero-image mb-4"></header>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="icon mb-2"><img src="./img/mountain_Blue.png" alt="climbing"></div>
+                <h3>Climbing</h3>
+                <p>Get your climbing gear for this season.</p>
             </div>
-            <div>
-                <p><strong>Correo: </strong> prueba@gmail.com</p>
+            <div class="col-md-4 text-center">
+                <div class="icon mb-2"><img src="./img/shoe_Blue.png" alt="running"></div>
+                <h3>Running</h3>
+                <p>Run fresh, run smooth with these shoes.</p>
             </div>
-            <div>
-                <p><strong>Telefono: </strong> 5678-3456</p>
+            <div class="col-md-4 text-center">
+                <div class="icon mb-2"><img src="./img/bicycle_Blue.png" alt="bicycle"></div>
+                <h3>Bicycle</h3>
+                <p>Can't get more fun than this! Try a bike.</p>
             </div>
         </div>
-        <div>
-            <h4>Redes Sociales</h4>
-            <div>
-                <!-- Redes Sociales -->
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./img/shutterstock_422560537.jpg" alt="Excursionistas" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu enim magna. Aliquam ut lorem ipsum. Vivamus nec condimentum nisi. Sed ultrices augue a lectus sagittis, at elementum urna volutpat.</p>
+                <button class="btn btn-secondary">Leer Más</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/carved-rock-logo-white.png" alt="Carved Rock Fitness" height="80">
+                    <h5>Contacto</h5>
+                    <p>Dirección: Ciudad de Mexico</p>
+                    <p>Correo: humbertoezequiel.z.c@gmail.com</p>
+                    <p>Teléfono: 77774551</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Redes Sociales</h5>
+                    <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
